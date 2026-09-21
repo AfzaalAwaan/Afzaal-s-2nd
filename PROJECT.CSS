@@ -1,0 +1,33 @@
+body{
+    background-image: url(./bg.webp);
+    background-repeat: no-repeat;
+background-size: 100%;
+display: flex;
+color: white;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 200px;}
+a{
+    color: white;}
+
+    div{
+        margin: auto;
+        padding: 25px;
+        border: 5px solid blanchedalmond;
+        background-color: rgb(119, 0, 255);
+    }
+   
+   input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 25px;
+     padding: 5px;
+     
+    
+   }
+   button{
+    width: 170px;
+    background-color: rgb(160, 123, 45)
+    
+   }
