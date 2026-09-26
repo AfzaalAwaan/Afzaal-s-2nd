@@ -4,17 +4,20 @@ body {
     background-color: lightslategray
 }
 
+
 .heading {
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
+   
 }
 
 .paragraph {
     text-align: center;
     line-height: 1.6;
     text-wrap: initial;
+    
 }
 
 .heading2 {

@@ -1,0 +1,60 @@
+
+        .navigation {
+            display: flex;
+            justify-content: right;
+            word-spacing: 59px;
+            margin-right: 63px;
+        }
+
+        body {
+            @font-face {
+                font-family: Courgette;
+                src: url(Courgette-Regular.ttf);
+            }
+
+            font-family: Courgette,
+            monospace;
+
+            background-image: url(./back.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+
+        }
+
+        .heading1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 270px;
+            color: white;
+            word-spacing: 20px;
+            margin-top: 20px;
+        }
+        .navbar a{
+            color: white;
+        }
+       
+        .Search {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.Search input {
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.button{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+.button:hover
+{
+    color: rgb(28, 29, 29);
+background-color: aqua;}
