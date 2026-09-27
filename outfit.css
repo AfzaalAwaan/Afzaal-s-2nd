@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -8,6 +16,7 @@ img {
 
 nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -16,6 +25,8 @@ nav {
 
 .links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 
 }
@@ -54,11 +65,11 @@ a:hover {
     margin: 0;
 }
 
-span {
+.heading span {
     color: rgb(218, 216, 111);
 }
 
-p {
+.Hero p {
     text-align: center;
     margin: 5px 0;
     font-size: 29px;
@@ -78,28 +89,33 @@ p {
     height: 35px;
     padding-left: 40px;
 }
+
 .input span {
     position: absolute;
     left: 47.5%;
     top: 46%;
-    transform: translate(-265px, -45%);}
+    transform: translate(-265px, -45%);
+}
 
-    input:hover{
-        color: aqua;
-        background-color: rgb(86, 78, 94);
-    }
-    button{
-        border-radius: 15px;
-        width: 70px;
-    }
-    button:hover{
-        background-color: burlywood;
-        color: springgreen;
-        cursor: pointer;
-    }
- /* services section */
+input:hover {
+    color: aqua;
+    background-color: rgb(86, 78, 94);
+}
 
- .Cards {
+button {
+    border-radius: 15px;
+    width: 70px;
+}
+
+button:hover {
+    background-color: burlywood;
+    color: springgreen;
+    cursor: pointer;
+}
+
+/* services section */
+
+.Cards {
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -108,7 +124,8 @@ p {
     padding: 0 20px;
     align-items: center;
 }
- .card {
+
+.card {
     border-radius: 25px;
     background-color: lightgray;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.14);
@@ -117,31 +134,37 @@ p {
     height: 200px;
     transition: 0.4s;
     margin: 0;
-    
+
 }
+
 .Services h2 {
     text-align: center;
     font-size: 40px;
     margin: 40px 0 25px;
 }
+
 .card h3 {
     font-size: 22px;
     margin: 5px 0;
 }
+
 .card p {
     font-size: 17px;
     font-weight: normal;
     color: blue;
     margin: 5px;
 }
- .card:hover {
+
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+
 .icon {
     font-size: 40px;
     margin: 5px;
 }
+
 .card button {
     padding: 8px 15px;
     border: none;
@@ -153,4 +176,191 @@ p {
 
 .card button:hover {
     background-color: darkblue;
+}
+
+.how-its-work h2 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.how-its-work {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+.how-its-work h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.how-its-work p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.service-card {
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.service-card h3 {
+    margin: 5px 0 10px;
+    font-size: 22px;
+}
+
+.service-card p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    font-size: 35px;
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+.cta button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cta button:hover {
+    color: aqua;
+    background-color: burlywood;
+}
+
+.footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer h2 {
+    font-size: 28px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    .Hero {
+        height: 400px;
+    }
+
+    .heading {
+        font-size: 38px;
+        padding-top: 100px;
+    }
+
+    .Hero p {
+        font-size: 20px;
+    }
+
+    .input {
+        width: 90%;
+        margin: auto;
+    }
+
+    .input input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Cards {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
 }
